@@ -1,21 +1,12 @@
-const express = require('express');
-const path = require('path');
-const { Client } = require('pg');
-const client = new Client();
+const server = require('./src/server')
+const db = require('./src/server/db');
 
-let server = express();
-
-client.connect()
+db.connect()
   .then(() => {
-    server.use(express.static(path.join(__dirname, 'dist')));
-    server.get('/', (req, res) => {
-      res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+    server.listen(server.get('port'), () => {
+      console.log(`Server listening on localhost:${server.get('port')}`);
     });
   })
   .catch(err => {
-    console.error(err); 
+    console.error(err);
   });
-
-if (require.main !== module) {
-  module.exports = server;
-}

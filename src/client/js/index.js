@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import 'bootstrap/scss/bootstrap.scss';
-import './styles/main.scss';
+import '../styles/main.scss';
 
 const Home = {
   template: '<div>Home</div>'
@@ -28,7 +28,7 @@ const router = new VueRouter({
 new Vue({
   el: '#app',
   data: {
-    appName: 'My App'
+    appName: 'My Appy'
   },
   router
 });
