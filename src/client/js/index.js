@@ -3,12 +3,8 @@ import VueRouter from 'vue-router'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import '../styles/main.scss';
 
-const Home = {
-  template: '<div>Home</div>'
-};
-const Page1 = {
-  template: '<div>Page 1</div>'
-};
+import Home from '../components/Home.vue';
+import Page1 from '../components/Page1.vue';
 
 const routes = [
   { path: '/', component: Home },

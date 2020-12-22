@@ -25,11 +25,15 @@
   "dependencies": {
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.21.0",
+    "compiler": "^0.1.2",
     "dateformat": "^4.3.1",
     "express": "^4.17.1",
     "minimist": "^1.2.5",
     "pg": "^8.5.1",
     "vue": "^2.6.12",
-    "vue-router": "^3.4.9"
+    "vue-loader": "^15.9.6",
+    "vue-router": "^3.4.9",
+    "vue-template": "^1.0.3",
+    "vue-template-compiler": "^2.6.12"
   }
 }
